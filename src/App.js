@@ -5,8 +5,8 @@ function App() {
   const [ingredientList, updateIngredientList] = useState([]);
   const [loading, setLoading] = useState(false);
   const inputRef = useRef(null);
-  const API_KEY = 'd186145028ed01ef715a6387294dd388';
-  const APP_ID = '7078ebfb';
+  const API_KEY = process.env.REACT_APP_API_KEY;
+  const APP_ID = process.env.REACT_APP_ID;
 
   const search = () => {
     searchForRecipe(inputRef.current.value);
