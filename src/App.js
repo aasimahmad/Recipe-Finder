@@ -37,6 +37,7 @@ function App() {
 
   useEffect(() => {
     searchForRecipe('paneer');
+    // eslint-disable-next-line
   }, []);
 
   return (
